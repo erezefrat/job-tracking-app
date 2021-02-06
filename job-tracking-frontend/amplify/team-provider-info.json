@@ -1,15 +1,23 @@
 {
-  "prod": {
-    "awscloudformation": {
-      "AuthRoleName": "amplify-jobtrackingfrontend-prod-20812-authRole",
-      "UnauthRoleArn": "arn:aws:iam::017455253176:role/amplify-jobtrackingfrontend-prod-20812-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::017455253176:role/amplify-jobtrackingfrontend-prod-20812-authRole",
-      "Region": "eu-central-1",
-      "DeploymentBucketName": "amplify-jobtrackingfrontend-prod-20812-deployment",
-      "UnauthRoleName": "amplify-jobtrackingfrontend-prod-20812-unauthRole",
-      "StackName": "amplify-jobtrackingfrontend-prod-20812",
-      "StackId": "arn:aws:cloudformation:eu-central-1:017455253176:stack/amplify-jobtrackingfrontend-prod-20812/692a7380-680f-11eb-bcae-060b15be38d2",
-      "AmplifyAppId": "die34e241tipz"
+    "prod": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-jobtrackingfrontend-prod-20812-authRole",
+            "UnauthRoleArn": "arn:aws:iam::017455253176:role/amplify-jobtrackingfrontend-prod-20812-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::017455253176:role/amplify-jobtrackingfrontend-prod-20812-authRole",
+            "Region": "eu-central-1",
+            "DeploymentBucketName": "amplify-jobtrackingfrontend-prod-20812-deployment",
+            "UnauthRoleName": "amplify-jobtrackingfrontend-prod-20812-unauthRole",
+            "StackName": "amplify-jobtrackingfrontend-prod-20812",
+            "StackId": "arn:aws:cloudformation:eu-central-1:017455253176:stack/amplify-jobtrackingfrontend-prod-20812/692a7380-680f-11eb-bcae-060b15be38d2",
+            "AmplifyAppId": "die34e241tipz"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "die34e241tipz",
+                    "type": "cicd"
+                }
+            }
+        }
     }
-  }
 }
