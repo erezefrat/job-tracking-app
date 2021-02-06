@@ -1,0 +1,15 @@
+{
+  "master": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-jobtrackingapp-master-173040-authRole",
+      "UnauthRoleArn": "arn:aws:iam::017455253176:role/amplify-jobtrackingapp-master-173040-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::017455253176:role/amplify-jobtrackingapp-master-173040-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-jobtrackingapp-master-173040-deployment",
+      "UnauthRoleName": "amplify-jobtrackingapp-master-173040-unauthRole",
+      "StackName": "amplify-jobtrackingapp-master-173040",
+      "StackId": "arn:aws:cloudformation:eu-central-1:017455253176:stack/amplify-jobtrackingapp-master-173040/483b3070-6890-11eb-bcae-060b15be38d2",
+      "AmplifyAppId": "d1qc4kcoyu0l2l"
+    }
+  }
+}
