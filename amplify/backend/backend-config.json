@@ -1,1 +1,17 @@
-{}
+{
+  "auth": {
+    "jobtrackingappd08ecc43": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "service": "amplifyhosting",
+      "type": "cicd",
+      "lastPushTimeStamp": "2021-02-08T21:14:30.915Z"
+    }
+  }
+}
