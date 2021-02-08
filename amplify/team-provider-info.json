@@ -1,26 +1,26 @@
 {
-    "prod": {
-        "awscloudformation": {
-            "AuthRoleName": "amplify-jobtrackingapp-prod-230333-authRole",
-            "UnauthRoleArn": "arn:aws:iam::017455253176:role/amplify-jobtrackingapp-prod-230333-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::017455253176:role/amplify-jobtrackingapp-prod-230333-authRole",
-            "Region": "eu-central-1",
-            "DeploymentBucketName": "amplify-jobtrackingapp-prod-230333-deployment",
-            "UnauthRoleName": "amplify-jobtrackingapp-prod-230333-unauthRole",
-            "StackName": "amplify-jobtrackingapp-prod-230333",
-            "StackId": "arn:aws:cloudformation:eu-central-1:017455253176:stack/amplify-jobtrackingapp-prod-230333/1c9febf0-6a51-11eb-81e9-0247c921db50",
-            "AmplifyAppId": "d1hcpjqmtmcp5x"
-        },
-        "categories": {
-            "auth": {
-                "jobtrackingappd08ecc43": {}
-            },
-            "hosting": {
-                "amplifyhosting": {
-                    "appId": "d1hcpjqmtmcp5x",
-                    "type": "cicd"
-                }
-            }
+  "prod": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-jobtrackingapp-prod-230333-authRole",
+      "UnauthRoleArn": "arn:aws:iam::017455253176:role/amplify-jobtrackingapp-prod-230333-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::017455253176:role/amplify-jobtrackingapp-prod-230333-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-jobtrackingapp-prod-230333-deployment",
+      "UnauthRoleName": "amplify-jobtrackingapp-prod-230333-unauthRole",
+      "StackName": "amplify-jobtrackingapp-prod-230333",
+      "StackId": "arn:aws:cloudformation:eu-central-1:017455253176:stack/amplify-jobtrackingapp-prod-230333/1c9febf0-6a51-11eb-81e9-0247c921db50",
+      "AmplifyAppId": "d1hcpjqmtmcp5x"
+    },
+    "categories": {
+      "auth": {
+        "jobtrackingappd08ecc43": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d1hcpjqmtmcp5x",
+          "type": "cicd"
         }
+      }
     }
+  }
 }

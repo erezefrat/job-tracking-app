@@ -1,31 +1,56 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
 import Amplify from 'aws-amplify';
-import awsExports from './aws-exports';
-import { withAuthenticator } from '@aws-amplify/ui-react';
-Amplify.configure(awsExports);
+import {
+  AmplifyAuthenticator,
+  AmplifySignIn,
+  AmplifySignOut,
+  AmplifySignUp
+} from '@aws-amplify/ui-react';
+import { AuthState, onAuthUIStateChange } from '@aws-amplify/ui-components';
+import awsconfig from './aws-exports';
 
-function App() {
-  return (
+Amplify.configure(awsconfig);
+
+const App: React.FunctionComponent = () => {
+  const [authState, setAuthState] = React.useState<AuthState>();
+  const [user, setUser] = React.useState<object | undefined>();
+
+  React.useEffect(() => {
+    onAuthUIStateChange((nextAuthState, authData) => {
+      setAuthState(nextAuthState);
+      setUser(authData);
+    });
+  }, []);
+
+  return authState === AuthState.SignedIn && user ? (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>Hello, {(user as { username: string }).username}</div>
+      <AmplifySignOut />
     </div>
+  ) : (
+    <AmplifyAuthenticator usernameAlias="email">
+      <AmplifySignUp
+        slot="sign-up"
+        usernameAlias="email"
+        formFields={[
+          {
+            type: 'email',
+            label: 'Email',
+            placeholder: '',
+            required: true
+          },
+          {
+            type: 'password',
+            label: 'Password',
+            placeholder: '',
+            required: true
+          }
+        ]}
+      />
+      <AmplifySignIn slot="sign-in" usernameAlias="email" />
+    </AmplifyAuthenticator>
   );
-}
+};
 
-export default withAuthenticator(App);
+export default App;
